@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inspeksi APAR Airnav</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="form-container">
+    <h2>Form Inspeksi APAR</h2>
+    <form id="aparForm" method="POST" action="https://script.google.com/macros/s/AKfycbye2FyAncvgTg_wBgVpiDJOnl78TAuxlY_BLqqpgiqBpbny7vwuGGGlBHV49vx4OP7E/exec">
+      
+      <label for="inspektor">Inspektor</label>
+      <input type="text" id="inspektor" name="inspektor" required>
+
+    <label for="lokasi">Lokasi</label>
+<select id="lokasi" name="lokasi" required>
+  <option value="">-- Pilih --</option>
+  <option value="Ruang MFT">Ruang MFT</option>
+  <option value="Ruang Server 1">Ruang Server 1</option>
+  <option value="Ruang Server 2">Ruang Server 2</option>
+  <option value="APP Control">APP Control</option>
+  <option value="Unit Pia">Unit Pia</option>
+  <option value="Ruang AMSC">Ruang AMSC</option>
+  <option value="Ruang RX">Ruang RX</option>
+  <option value="Cabin Tower">Cabin Tower</option>
+  <option value="Gedung Radar">Gedung Radar</option>
+  <option value="Genset Radar">Genset Radar</option>
+</select>
+
+      <label for="kondisi_tuas">Kondisi Tuas</label>
+      <select id="kondisi_tuas" name="kondisi_tuas" required>
+        <option value="">-- Pilih --</option>
+        <option value="Baik">Baik</option>
+        <option value="Rusak">Rusak</option>
+      </select>
+
+      <label for="kondisi_segel">Kondisi Segel</label>
+      <select id="kondisi_segel" name="kondisi_segel" required>
+        <option value="">-- Pilih --</option>
+        <option value="Baik">Baik</option>
+        <option value="Pecah">Pecah</option>
+        <option value="Tidak_ada">Tidak Ada</option>
+      </select>
+
+      <label for="kondisi_tabung">Kondisi Tabung</label>
+      <select id="kondisi_tabung" name="kondisi_tabung" required>
+        <option value="">-- Pilih --</option>
+        <option value="Baik">Baik</option>
+        <option value="Penyok">Penyok</option>
+        <option value="Bocor">Bocor</option>
+      </select>
+
+      <label for="kondisi_selang">Kondisi Selang</label>
+      <select id="kondisi_selang" name="kondisi_selang" required>
+        <option value="">-- Pilih --</option>
+        <option value="Baik">Baik</option>
+        <option value="Retak">Retak</option>
+        <option value="Bocor">Bocor</option>
+      </select>
+
+      <label for="kondisi_nozzle">Kondisi Nozzle</label>
+      <select id="kondisi_nozzle" name="kondisi_nozzle" required>
+        <option value="">-- Pilih --</option>
+        <option value="Baik">Baik</option>
+        <option value="Rusak">Rusak</option>
+        <option value="Tersumbat">Tersumbat</option>
+      </select>
+
+      <label for="kondisi_tekanan">Kondisi Tekanan</label>
+      <select id="kondisi_tekanan" name="kondisi_tekanan" required>
+        <option value="">-- Pilih --</option>
+        <option value="Normal">Normal</option>
+        <option value="Turun">Turun</option>
+      </select>
+
+      <label for="kondisi_kebersihan">Kondisi Kebersihan</label>
+      <select id="kondisi_kebersihan" name="kondisi_kebersihan" required>
+        <option value="">-- Pilih --</option>
+        <option value="Bersih">Bersih</option>
+        <option value="Kotor">Kotor</option>
+      </select>
+
+      <button id="submit-btn" type="submit">Simpan Data</button>
+    </form>
+  </div>
+
+  <div id="toast"></div>
+
+  <div id="footer">
+    &copy;Form Inspeksi APAR Airnav Surabaya
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
